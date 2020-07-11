@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Main - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\HP\AppData\Local\Temp\RSP9404.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Main.pdb" /debug /machine:I386 /out:"Debug/Main.exe" /pdbtype:sept /FORCE:MULTIPLE 
+".\Debug\Example.obj"
+".\Debug\Main.obj"
+".\Debug\MinimumSpanningTree.obj"
+".\Debug\ShortestPath.obj"
+".\Debug\TopologicalSort.obj"
+".\Debug\traverse.obj"
+]
+Creating command line "link.exe @C:\Users\HP\AppData\Local\Temp\RSP9404.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4075: ignoring /INCREMENTAL due to /FORCE specification
+Main.obj : warning LNK4006: "void __cdecl example(void)" (?example@@YAXXZ) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl cmd(void)" (?cmd@@YAXXZ) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "struct MMGraph __cdecl InitGraph(void)" (?InitGraph@@YA?AUMMGraph@@XZ) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl Menu(void)" (?Menu@@YAXXZ) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl Browser(struct MMGraph *)" (?Browser@@YAXPAUMMGraph@@@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl ShortestPath_DIJ(struct MMGraph *)" (?ShortestPath_DIJ@@YAXPAUMMGraph@@@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl Floyd(struct MMGraph *)" (?Floyd@@YAXPAUMMGraph@@@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl Search(struct MMGraph *)" (?Search@@YAXPAUMMGraph@@@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "int __cdecl LocateVex(struct MMGraph *,char *)" (?LocateVex@@YAHPAUMMGraph@@PAD@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "struct MMGraph * __cdecl CreatUDN(struct MMGraph *)" (?CreatUDN@@YAPAUMMGraph@@PAU1@@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "void __cdecl print(struct MMGraph *)" (?print@@YAXPAUMMGraph@@@Z) already defined in Example.obj; second definition ignored
+Main.obj : warning LNK4006: "struct MMGraph b" (?b@@3UMMGraph@@A) already defined in Example.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl Prim(int,int (* const)[7])" (?Prim@@YAXHQAY06H@Z) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl printarray(int * const)" (?printarray@@YAXQAH@Z) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl printarray1(int * const)" (?printarray1@@YAXQAH@Z) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl Prim(void)" (?Prim@@YAXXZ) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int __cdecl Find(int)" (?Find@@YAHH@Z) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl Union(int,int)" (?Union@@YAXHH@Z) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl Kruskal(int (* const)[7])" (?Kruskal@@YAXQAY06H@Z) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "void __cdecl Kruskal(void)" (?Kruskal@@YAXXZ) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * distance" (?distance@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int (* map)[7]" (?map@@3PAY06HA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * hash" (?hash@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * EndVertex" (?EndVertex@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * Known1" (?Known1@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * AcceptedEdge" (?AcceptedEdge@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * Edge" (?Edge@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * Known" (?Known@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * path" (?path@@3PAHA) already defined in Main.obj; second definition ignored
+MinimumSpanningTree.obj : warning LNK4006: "int * BeginVertex" (?BeginVertex@@3PAHA) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "int __cdecl dijkstra(int,int)" (?dijkstra@@YAHHH@Z) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "void __cdecl shortestPath(void)" (?shortestPath@@YAXXZ) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "int * len" (?len@@3PAHA) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "int (* map1)[110]" (?map1@@3PAY0GO@HA) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "int n" (?n@@3HA) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "int m" (?m@@3HA) already defined in Main.obj; second definition ignored
+ShortestPath.obj : warning LNK4006: "int * visit1" (?visit1@@3PAHA) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int __cdecl InitStack(struct SqStack &)" (?InitStack@@YAHAAUSqStack@@@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int __cdecl StackEmpty(struct SqStack)" (?StackEmpty@@YAHUSqStack@@@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int __cdecl Push(struct SqStack *,int)" (?Push@@YAHPAUSqStack@@H@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int __cdecl Pop(struct SqStack *,int &)" (?Pop@@YAHPAUSqStack@@AAH@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "void __cdecl Finedegree(struct ALGraph5 *)" (?Finedegree@@YAXPAUALGraph5@@@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int __cdecl TopologicalSort(struct ALGraph5 *)" (?TopologicalSort@@YAHPAUALGraph5@@@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int __cdecl IfArc(struct ALGraph5 *,char *)" (?IfArc@@YAHPAUALGraph5@@PAD@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "void __cdecl CreateALGraph5(struct ALGraph5 *)" (?CreateALGraph5@@YAXPAUALGraph5@@@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "void __cdecl FineCriticalpath(struct ALGraph5 *,struct SqStack &)" (?FineCriticalpath@@YAXPAUALGraph5@@AAUSqStack@@@Z) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "void __cdecl menu(void)" (?menu@@YAXXZ) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "void __cdecl topologicalSort(void)" (?topologicalSort@@YAXXZ) already defined in Main.obj; second definition ignored
+TopologicalSort.obj : warning LNK4006: "int * degree" (?degree@@3PAHA) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl traverse(void)" (?traverse@@YAXXZ) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl outputPicture(void)" (?outputPicture@@YAXXZ) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl DFS(struct Graph *,int)" (?DFS@@YAXPAUGraph@@H@Z) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl dfs(struct Graph *)" (?dfs@@YAXPAUGraph@@@Z) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl BFS(struct Graph *,int)" (?BFS@@YAXPAUGraph@@H@Z) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl bfs(struct Graph *)" (?bfs@@YAXPAUGraph@@@Z) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "void __cdecl bulidGraph(struct Graph * &)" (?bulidGraph@@YAXAAPAUGraph@@@Z) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "int * visitdfs" (?visitdfs@@3PAHA) already defined in Main.obj; second definition ignored
+traverse.obj : warning LNK4006: "int * visit" (?visit@@3PAHA) already defined in Main.obj; second definition ignored
+Debug/Main.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+
+
+
+<h3>Results</h3>
+Main.exe - 0 error(s), 60 warning(s)
+</pre>
+</body>
+</html>

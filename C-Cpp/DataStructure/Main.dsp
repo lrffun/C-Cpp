@@ -1,24 +1,24 @@
-# Microsoft Developer Studio Project File - Name="main" - Package Owner=<4>
+# Microsoft Developer Studio Project File - Name="Main" - Package Owner=<4>
 # Microsoft Developer Studio Generated Build File, Format Version 6.00
 # ** DO NOT EDIT **
 
 # TARGTYPE "Win32 (x86) Console Application" 0x0103
 
-CFG=main - Win32 Debug
+CFG=Main - Win32 Debug
 !MESSAGE This is not a valid makefile. To build this project using NMAKE,
 !MESSAGE use the Export Makefile command and run
 !MESSAGE 
-!MESSAGE NMAKE /f "main.mak".
+!MESSAGE NMAKE /f "Main.mak".
 !MESSAGE 
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
 !MESSAGE 
-!MESSAGE NMAKE /f "main.mak" CFG="main - Win32 Debug"
+!MESSAGE NMAKE /f "Main.mak" CFG="Main - Win32 Debug"
 !MESSAGE 
 !MESSAGE Possible choices for configuration are:
 !MESSAGE 
-!MESSAGE "main - Win32 Release" (based on "Win32 (x86) Console Application")
-!MESSAGE "main - Win32 Debug" (based on "Win32 (x86) Console Application")
+!MESSAGE "Main - Win32 Release" (based on "Win32 (x86) Console Application")
+!MESSAGE "Main - Win32 Debug" (based on "Win32 (x86) Console Application")
 !MESSAGE 
 
 # Begin Project
@@ -28,7 +28,7 @@ CFG=main - Win32 Debug
 CPP=cl.exe
 RSC=rc.exe
 
-!IF  "$(CFG)" == "main - Win32 Release"
+!IF  "$(CFG)" == "Main - Win32 Release"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 0
@@ -51,7 +51,7 @@ LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386
 # ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /machine:I386
 
-!ELSEIF  "$(CFG)" == "main - Win32 Debug"
+!ELSEIF  "$(CFG)" == "Main - Win32 Debug"
 
 # PROP BASE Use_MFC 0
 # PROP BASE Use_Debug_Libraries 1
@@ -62,6 +62,7 @@ LINK32=link.exe
 # PROP Use_Debug_Libraries 1
 # PROP Output_Dir "Debug"
 # PROP Intermediate_Dir "Debug"
+# PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /YX /FD /GZ /c
 # ADD CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /YX /FD /GZ /c
@@ -72,21 +73,46 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /debug /machine:I386 /pdbtype:sept /FORCE:MULTIPLE
+# SUBTRACT LINK32 /pdb:none
 
 !ENDIF 
 
 # Begin Target
 
-# Name "main - Win32 Release"
-# Name "main - Win32 Debug"
+# Name "Main - Win32 Release"
+# Name "Main - Win32 Debug"
 # Begin Source File
 
-SOURCE=.\main.cpp
+SOURCE=.\Example.cpp
 # End Source File
 # Begin Source File
 
-SOURCE="..\..\..\..\..\Self-compiled_program\É¨À×\main.cpp"
+SOURCE=.\Main.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MinimumSpanningTree.asp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MinimumSpanningTree.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ShortestPath.asp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ShortestPath.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\TopologicalSort.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\traverse.cpp
 # End Source File
 # End Target
 # End Project

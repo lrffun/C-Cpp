@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DataStructure - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\HP\AppData\Local\Temp\RSP16A8.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/DataStructure.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"F:\MyProgram\C&CPP\DataStructure\Main.cpp"
+"F:\MyProgram\C&CPP\DataStructure\storage.cpp"
+]
+Creating command line "cl.exe @C:\Users\HP\AppData\Local\Temp\RSP16A8.tmp" 
+Creating temporary file "C:\Users\HP\AppData\Local\Temp\RSP16A9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/DataStructure.pdb" /debug /machine:I386 /out:"Debug/DataStructure.exe" /pdbtype:sept 
+".\Debug\Main.obj"
+".\Debug\storage.obj"
+]
+Creating command line "link.exe @C:\Users\HP\AppData\Local\Temp\RSP16A9.tmp"
+<h3>Output Window</h3>
+Compiling...
+storage.cpp
+Skipping... (no relevant changes detected)
+Main.cpp
+Linking...
+storage.obj : error LNK2005: "int __cdecl locateVex(struct MGraph,int)" (?locateVex@@YAHUMGraph@@H@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl createDN(struct MGraph &)" (?createDN@@YAXAAUMGraph@@@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl printDN(struct MGraph)" (?printDN@@YAXUMGraph@@@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl Array(void)" (?Array@@YAXXZ) already defined in Main.obj
+storage.obj : error LNK2005: "int __cdecl locateVex(struct ALGraph,int)" (?locateVex@@YAHUALGraph@@H@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl createUDN(struct ALGraph &)" (?createUDN@@YAXAAUALGraph@@@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl printAdjList(struct ALGraph)" (?printAdjList@@YAXUALGraph@@@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl AdjacencyList(void)" (?AdjacencyList@@YAXXZ) already defined in Main.obj
+storage.obj : error LNK2005: "int __cdecl LocalBow(char,struct total *)" (?LocalBow@@YAHDPAUtotal@@@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl create(struct total *)" (?create@@YAXPAUtotal@@@Z) already defined in Main.obj
+storage.obj : error LNK2005: "void __cdecl CurbTable(void)" (?CurbTable@@YAXXZ) already defined in Main.obj
+Debug/DataStructure.exe : fatal error LNK1169: one or more multiply defined symbols found
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+DataStructure.exe - 12 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
